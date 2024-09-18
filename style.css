@@ -1,21 +1,213 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.imagem{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 body{
-    height: 100vh;
+    height: calc(100vh - 50px);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
+    margin: 20px;
+    padding: 0px;
+    gap: 15px;
 }
-
-img:nth-child(1){
-    grid-area: 1 / 1 / 12 / 1
+.quad{
+    grid-area: 1 / 1 / 2 / 13;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr)
+}
+.quad1{
+    grid-area: 2 / 1 / 8 / 6;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6, 1fr)
+}
+.fotojulia{
+    grid-area: 2/ 6 / 8 / 9;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px
+}
+.quad2{
+    grid-area: 2 / 9 / 11 / 13;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10,1fr);
+}
+.quad3{
+    grid-area: 8 / 1 / 13 / 5;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+.quad4{
+    grid-area: 8 / 5 / 13 / 9;
+    border-radius: 10px; 
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+.quad5{
+    grid-area: 11 / 9 / 13 / 13;
+    border-radius: 10px;
+}
+#julia{
+    grid-area: 1/1/1/3;
+    font-family: Gilroy, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 3000;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-right: 0px;
+}
+#huang {
+    grid-area: 1/1/1/3;
+    font-family: Gilroy, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-left: 90px;
+}
+#projects{
+    grid-area: 1/10/1/11;
+    font-family: Gilroy, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+}
+#about{
+    grid-area: 1/11/1/12;
+    font-family: Gilroy, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+}
+#contact{
+    grid-area: 1/12/1/13;
+    font-family: Gilroy, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 10px;
+    text-align: center;
+}
+#artista{
+    margin: 0px;
+    grid-area: 1/1/5/5;
+    font-family: Gilroy, sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: left;
+    padding-top: 90px;
+    padding-left: 10px;
+}
+#arquitetura{
+    font-family: Gilroy, sans-serif;
+    font-size: 35px;
+    font-style: italic;
+    text-align: left;
+    font-weight:100;
+}
+#flower{
+    grid-area: 1 / 5 / 1 / 6;
+    padding: 10px;
+    object-fit: cover;
+}
+#text3{
+    grid-area: 3 / 1 / 6 / 5;
+    font-family: Gilroy, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    font-weight:100;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.circ{
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 10px;
+}
+#ques{
+    grid-area: 1 / 1 / 1 / 2;
+    font-family: Gilroy, sans-serif;
+    font-size: 12px;
+    text-align: left;
+    font-weight:100;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+#cont{
+    grid-area: 5 / 1 / 6 / 4;
+    font-family: Gilroy, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 500;
+    padding-top: 60px;
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+.fle{
+    grid-area: 1 / 5 / 1 / 6;
+    padding-top: 5px;
+    padding-left: 35px;
+}
+.text4{
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    margin-top: 20px;
+    font-family: Gilroy, sans-serif;
+    text-transform: uppercase;
+}
+#musea{
+    grid-area: 1/ 2 / 1 / 4;
+    font-family: Gilroy, sans-serif;
+    font-weight: 700;
+}
+.fle1{
+    padding: 0;
+    grid-area: 1 / 10 / 1 / 11
+}
+.sofa{
+    grid-area: 2 / 2 / 6 / 10;
+    width: 100%;
+    height: 100%;
+}
+#linha1{
+    background-color: #F8AFA6;
+    height: 2px;
+    width: 100%;
+    grid-area: 7 / 2 / 7 / 10; 
+}
+#linha2{
+    background-color: #F8AFA6;
+    height: 2px;
+    width: 100%;
+    grid-area: 8 / 2 / 8 / 10; 
+}
+#linha3{
+    background-color: #F8AFA6;
+    height: 2px;
+    width: 100%;
+    grid-area: 9 / 2 / 9 / 10; 
+}
+#linhat1{
+    grid-area: 7 / 2 / 7 / 6
+}
+#linhat2{
+    grid-area: 8 / 2 / 8 / 6
+}
+#linhat3{
+    grid-area: 9 / 2 / 9 / 6
 }
